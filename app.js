@@ -74,7 +74,7 @@ console.log(namePlusScores(users));
     console.log("EXERCISE 5:\n==========\n");
 
     function sortUsers (arr) {
-        return arr.sort((a, b) => (a.score > b.score) ? 1 : ((b.score > a.score) ? -1 : 0));
+        return arr.sort((user1, user2) => (user1.score > user2.score) ? 1 : ((user2.score > user1.score) ? -1 : 0));
     }
 
     console.log(sortUsers(users));
