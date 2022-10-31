@@ -83,7 +83,7 @@ console.log(namePlusScores(users));
      console.log("EXERCISE 6:\n==========\n");
 function reduceUsers (arr){
     let initValue = 0;
-    let scoreSum = arr.reduce((a,b) => a + b.score, initValue);
-    return scoreSum/(arr.length);
+    let scoreAvg = arr.reduce((totalScore,currentScore) => totalScore + currentScore.score, initValue)/arr.length;
+    return scoreAvg;
 }
 console.log(reduceUsers(users));
