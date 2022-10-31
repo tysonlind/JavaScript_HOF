@@ -66,7 +66,7 @@ console.log(namePlusScores(users));
   console.log("EXERCISE 4:\n==========\n");
 
   function filteredUsers(arr){
-    return arr.filter(user => user.isActive == true);
+    return arr.filter(user => user.isActive);
   }
   console.log(filteredUsers(users));
 
